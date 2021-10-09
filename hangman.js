@@ -114,7 +114,7 @@ function checkGuessedLetter() {
                 document.getElementById("result").innerHTML = ">>> Game over! You lose. The answer is '" + problem + "'. <<<";
                 document.getElementById("guess").disabled = true;
                 document.getElementById("guessButton").disabled = true;
-                document.getElementById("again").innerHTML = "<a href='task11.html'><button>Play again</button></a>";
+                document.getElementById("again").innerHTML = "<a href='hangman.html'><button>Play again</button></a>";
             }
         } else { //If true, replace guessed letter into all hidden spots + display correct message and guessed letter
             guessedLetters.push(checkedLetter);
@@ -134,7 +134,7 @@ function checkGuessedLetter() {
                 document.getElementById("result").innerHTML = ">>> Yay! You guessed the whole word. <<<";
                 document.getElementById("guess").disabled = true;
                 document.getElementById("guessButton").disabled = true;
-                document.getElementById("again").innerHTML = "<a href='task11.html'><button>Play again</button></a>";
+                document.getElementById("again").innerHTML = "<a href='hangman.html'><button>Play again</button></a>";
             }
         }
     }
